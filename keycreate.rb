@@ -14,7 +14,7 @@
 #    and is the int larger than 1000? (Let's have a limit.)
 if ARGV[0] == nil || ARGV[0].to_i == 0 || ARGV[0].to_i > 1000
 	# Then let's tell the user they've done it wrong and how to correctly do it,
-	print "No proper integer of keys to create entered. Usage: `#{$0} <number of keys (1-1000)>`"
+	puts "No proper integer of keys to create entered. Usage: `#{$0} <number of keys (1-1000)>`"
 	# and exit the program.
 	exit
 end
@@ -29,7 +29,7 @@ ARGV[0].to_i.times do # Let's loop this the amount of times/keys the user wants.
 end
 
 # Print all the keys in the array, splitting it with a newline.
-print keys.join("\n")
+puts keys.join("\n")
 # => ABCDE-01234-KLMNO-56789-PQRST-01234
 #    BBF4B-A2E84-632C0-8CC52-F7E7D-09581
 #    etc.
